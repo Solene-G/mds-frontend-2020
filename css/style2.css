@@ -190,7 +190,7 @@ ul li a:active {
 }
 /* End animation titles */
 
-/* Début de colonne */
+/* Début de portfolio avec infos */
 
 img#photo {
 	grid-column: 2/3;
@@ -296,7 +296,7 @@ img#photo {
   	width: calc(100% - 10px);
 }
 
-/* Projets et infos */
+/* Grid des Projets et infos */
 
 #projetsgauche {
 	grid-column: 1/2;
@@ -406,6 +406,8 @@ img#photo {
 .overlay-image:hover .hover {
  	opacity: 1;
 }
+
+/* Footer */ 
 
 footer.w-container {
 	text-align: right;
