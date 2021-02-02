@@ -190,6 +190,8 @@ ul li a:active {
 }
 /* End animation titles */
 
+/* Début de colonne */
+
 img#photo {
 	grid-column: 2/3;
 	grid-row: 1/2;
@@ -221,8 +223,8 @@ img#photo {
 }
 
 .competences{
-  margin: 0 auto;
-  padding-right: 10px;
+  	margin: 0 auto;
+  	padding-right: 10px;
 }
 
 /* Barres de compétences*/
@@ -250,48 +252,48 @@ img#photo {
 
 
 .bar{
-  background-color: #EEE;
-  padding: 2px;
-  border-radius: 15px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #FFF;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  	background-color: #EEE;
+  	padding: 2px;
+  	border-radius: 15px;
+  	margin-bottom: 5px;
+  	font-size: 14px;
+  	color: #FFF;
+  	font-weight: bold;
+  	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 .bar::before{
-  content:  attr(data-skill);
-  background-color: #f3b0ff;
-  display: inline-block;
-  padding: 5px 0 5px 10px;
-  border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
+  	content:  attr(data-skill);
+  	background-color: #f3b0ff;
+  	display: inline-block;
+  	padding: 5px 0 5px 10px;
+  	border-radius: inherit;
+  	animation: load 2s 0s;
+  	-webkit-animation: load 2s 0s;
+  	-moz-animation: load 2s 0s;
+  	-o-animation: load 2s 0s;
 }
 
 .bar.front::before{
-  background-color: #ffcc33;
+  	background-color: #ffcc33;
 }
 .bar.back::before{
-  background-color: #a6cfe3;
+  	background-color: #a6cfe3;
 }
 
 .bar.learning::before{
-  width: calc(20% - 10px);
+  	width: calc(20% - 10px);
 }
 .bar.basic::before{
-  width: calc(40% - 10px);
+  	width: calc(40% - 10px);
 }
 .bar.intermediate::before{
-  width: calc(60% - 10px);
+  	width: calc(60% - 10px);
 }
 .bar.advanced::before{
-  width: calc(80% - 10px);
+  	width: calc(80% - 10px);
 }
 .bar.expert::before{
-  width: calc(100% - 10px);
+  	width: calc(100% - 10px);
 }
 
 /* Projets et infos */
@@ -319,8 +321,8 @@ img#photo {
 
 .solene-info {
 	text-align: left;
-  margin-left: 110px;
-  margin-top: 30px;
+  	margin-left: 110px;
+  	margin-top: 30px;
 }
 
 .solene-info div {
@@ -353,17 +355,27 @@ img#photo {
 	width: 40%;
 }
 
+.fa-linkedin:before {
+
+	padding-right: 20px;
+}
+
+.fa-facebook:before {
+
+	padding-right: 20px;
+}
+
 /* Mes photos avec le hover */
 
 .overlay-image {
- position: relative;
- width: 100%;
+ 	position: relative;
+ 	width: 100%;
 }
 
 .overlay-image .image {
- display: block;
- width: 100%;
- height: auto;
+ 	display: block;
+ 	width: 100%;
+ 	height: auto;
 }
 
 .overlay-image .text {
@@ -381,23 +393,23 @@ img#photo {
 
 
 .overlay-image .hover {
- border-radius: 20px;
- background-color: rgba(0,0,0,.5);
- position: absolute;
- top: 0;
- height: 100%;
- width: 100%;
- opacity: 0;
- transition: .5s ease;
+ 	border-radius: 20px;
+ 	background-color: rgba(0,0,0,.5);
+ 	position: absolute;
+ 	top: 0;
+ 	height: 100%;
+ 	width: 100%;
+ 	opacity: 0;
+ 	transition: .5s ease;
 }
 
 .overlay-image:hover .hover {
- opacity: 1;
+ 	opacity: 1;
 }
 
-footer {
-	grid-column: 1;
-	grid-row: 5/6;
+footer.w-container {
+	text-align: right;
+	padding-top: 20px;
 }
 
 
